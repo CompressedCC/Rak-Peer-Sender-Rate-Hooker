@@ -5,3 +5,5 @@ void __fastcall HookedSend(void* this_ptr, void* stream, int priority, int relia
     CallGlobalLuaFunction("_G.OnRakPeerSend", stream, priority, reliability, ordering_channel, system_address);
     return original_send(this_ptr, stream, priority, reliability, ordering_channel, system_address);
 }
+// what this will do is desync ur roblox player(for roblox)
+// not for idiots
